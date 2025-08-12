@@ -1,0 +1,23 @@
+CREATE TABLE nyc_taxi_staging(
+    driver_id INT,
+    vendor_id INT,
+    pickup_datetime TIMESTAMP,
+    dropoff_datetime TIMESTAMP,
+    passenger_count INT,
+    trip_distance FLOAT,
+    rate_code_id INT,
+    store_and_fwd_flag VARCHAR(1),
+    pu_location_id INT,
+    do_location_id INT,
+    payment_type INT,
+    fare_amount FLOAT,
+    extra_amount FLOAT,
+    mta_tax FLOAT,
+    tip_amount FLOAT,
+    improvement_surcharge FLOAT,
+    total_amount FLOAT,
+    congestion_surcharge FLOAT,
+    airport_fee FLOAT,
+    cbd_congestion_fee FLOAT,
+    PRIMARY KEY (driver_id, pickup_datetime)
+);
